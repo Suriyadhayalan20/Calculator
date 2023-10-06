@@ -11,25 +11,25 @@
     <div class="container">
         <div class="calculator">
         <input type="text" placeholder="0" id="output-screen">
-        <button onclick="Clear()">C</button>
-        <button onclick="Del()">DEL</button>
-        <button onclick="display('%')">%</button>
-        <button onclick="display('/')">/</button>
+        <button onclick="Clear()" style="background-color: lightgray; color: black;">AC</button>
+        <button onclick="Del()" style="background-color: lightgray; color: black;">DEL</button>
+        <button onclick="display('%')" style="background-color: lightgray; color: black;">%</button>
+        <button onclick="display('/')" style="background-color: orange;">/</button>
         <button onclick="display('7')">7</button>
         <button onclick="display('8')">8</button>
         <button onclick="display('9')">9</button>
-        <button onclick="display('*')">*</button>
+        <button onclick="display('*')" style="background-color: orange;">*</button>
         <button onclick="display('6')">6</button>
         <button onclick="display('5')">5</button>
         <button onclick="display('4')">4</button>
-        <button onclick="display('-')">-</button>
+        <button onclick="display('-')" style="background-color: orange;">-</button>
         <button onclick="display('3')">3</button>
         <button onclick="display('2')">2</button>
         <button onclick="display('1')">1</button>
-        <button onclick="display('+')">+</button>
-        <button onclick="display('.')">.</button>
-        <button onclick="display('0')">0</button>
-        <button onclick="Calculate()"class="equal">=</button>    
+        <button onclick="display('+')" style="background-color: orange;" >+</button>
+        <button onclick="display('0')" class="zero">0</button>
+        <button onclick="display('.')" class="dot">.</button>
+        <button onclick="Calculate()" style="background-color: orange;" class="equal">=</button>    
     </div>
     </div>
 
@@ -45,7 +45,7 @@
                 outputScreen.value= eval(outputScreen.value);
             }
             catch(err){
-                alert("Invalid")
+                outputScreen.value = ("Invalid")
             }
         }
         function Clear(){
